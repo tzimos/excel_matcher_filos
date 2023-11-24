@@ -50,8 +50,8 @@ class Images():
 
 
 class Processing():
-    BASE_DIR = "."
-    DATA_DIR = os.path.join(BASE_DIR, "images")
+    BASE_DIR = os.path.join(os.path.expanduser('~'), "Desktop")
+    DATA_DIR = os.path.join(BASE_DIR, "gamw")
     XLSX_FNAME = os.path.join(DATA_DIR, "ΚΑΤΑΛΟΓΟΣ.xls")
 
     def get_sheet(self):
