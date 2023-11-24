@@ -72,8 +72,6 @@ class Processing():
                 resizer.resize_and_convert_default_pairs()
                 img = Images(codename=starting, path=path)
                 images.append(img)
-            else:
-                raise Exception(f"Παρε με τηλεφωνο και πες μου οτι δεν υποστηριζει καταληξη {ending}")
         return images
 
     def get_col_names(self, sheet):
